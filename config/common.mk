@@ -221,6 +221,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.storage_manager.enabled=true
 
+# Magisk
+ PRODUCT_COPY_FILES += \
+     vendor/lineage/prebuilt/common/Magisk-v15.3.zip:system/addon.d/Magisk-v15.3.zip
+ 
 # These packages are excluded from user builds
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_PACKAGES += \
